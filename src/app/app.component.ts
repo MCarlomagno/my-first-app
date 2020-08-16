@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-sofi';
+  buttonPressed = false;
+
+  onButtonPressed(): void {
+    this.buttonPressed = !this.buttonPressed;
+  }
+
 }
